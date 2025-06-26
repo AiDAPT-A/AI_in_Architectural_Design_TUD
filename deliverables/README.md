@@ -3,7 +3,7 @@
 
 This is a placeholder for the student deliverables for the **AI Elective (5 ECTS)** at the Faculty of Architecture and the Built Environment, TU Delft.
 
-As part of the course, students developed data- and AI-driven design projects. In addition to their posters, each student group wrote a blog post to reflect on their process, methodology, and outcomes.
+As part of the course, students developed data- and AI-driven quantitative analysis of architectural projects. In addition to their posters, each student group wrote a blog post to reflect on their process, methodology, and outcomes.
 
 ## 📝 Student Blog Posts
 
