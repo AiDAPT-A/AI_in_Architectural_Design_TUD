@@ -22,6 +22,7 @@ from itertools import combinations
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
+import matplotlib.patches as mpatches
 
 # Dataframes
 import pandas as pd
@@ -180,6 +181,22 @@ def draw_graph(G, ax,
                            ax=ax, 
                            edgelist=edges, edge_color=edge_color, width=edge_width, 
                            style='--')
+
+# ----
+# Plot legend
+# ----
+
+def plot_legend(ax, color_map):
+    """create legend handles by looping through the color_map"""
+  
+    legend_handles = []
+    for cat, c in color_map.items():
+        # Create a colored patch for each room category
+        patch = mpatches.Patch(color=c, label=cat)
+        legend_handles.append(patch)
+    
+    # Apply the handles to the specific axis (ax)
+    _ = ax.legend(handles=legend_handles, fontsize='small', loc='upper right')
 
 
 # ----
