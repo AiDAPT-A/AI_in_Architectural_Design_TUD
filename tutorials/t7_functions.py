@@ -332,7 +332,7 @@ def draw_dataset(graphs, names, embeds_grid, names_grid, w, fs=50, stop=-1, s=0.
             for n, d in G.nodes('polygon')}
 
         # Draw floor plan and graph
-        draw_graph(ax, G, polygons=polygons, pos=pos, fs=fs, s=s, w=w, lw=lw)
+        draw_graph(ax, G, polygons=polygons, pos=pos, fs=fs, s=s, w=fs/w/3, lw=lw)
 
         if any(c.isalpha() for c in str(id)):
             draw_square(ax, size*1.7, feat - size*0.5, color="b", lw=fs/30)
